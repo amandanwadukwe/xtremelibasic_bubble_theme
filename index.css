@@ -1,0 +1,135 @@
+*{
+    font-family: sans-serif;
+}
+svg{
+    width:40px;
+    height:40px;
+}
+header{
+    width: 90vw;
+    margin: auto;
+    margin-bottom:2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i{
+    margin:1rem 0;
+    font-size:2rem;
+}
+p{
+    width:90%;
+    margin:1rem auto;
+    font-weight:lighter;
+    text-align:center;
+}
+h2{
+    width:100%;
+    margin:auto;
+    text-align: center;
+    font-family:comic sans ms;
+}
+button{
+    padding:1rem 1rem;
+    background-color: yellow;
+    border:none;
+    border-radius: 100vmax;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size:1.1rem;
+    margin:1rem 0;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.display{
+    display: block !important;
+}
+.logo{
+    font-family: comic sans ms;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.primary-navigation{
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.2);
+    display:none;
+    position:fixed;
+    left:0;
+}
+.primary-navigation ul{
+    width: 90%;
+    margin: 3rem auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
+    border-radius: 5vmax;
+}
+.primary-navigation li{
+    list-style:none;
+    font-weight:bold;
+    font-size:2rem;
+    padding:.5rem 1rem;
+}
+.primary-navigation li span{
+    font-family:"comic sans ms";
+}
+
+.primary-navigation li:hover{
+    background-color: yellow;
+    /* padding:1rem .5rem; */
+    border-radius: 100vmax;
+ transition:all .5s ease-in-out 
+}
+.help{
+    background-color:yellow;
+    padding:1.5rem;
+    border-radius: 100vmax;
+    font-weight:bold;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+    font-family:comic sans ms;
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    left:75vw;
+    top:82vh;
+}
+footer{
+    width:90vw;
+    margin:1rem auto;
+    padding:1rem 0;
+    background-color: rgba(255, 255, 0, 0.2);
+    text-align: center;
+    border-radius:2vmax;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:768px){
+    main{
+        width:50vw;
+    }
+    .menu{
+        display:none;
+    }
+    .primary-navigation{
+        width:40vw;
+        left:60%;
+        display:block;
+        background-color: transparent;
+    }
+    .primary-navigation ul{
+        box-shadow:none;
+    }
+    .credit{
+        display:none;
+    }
+}
